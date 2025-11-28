@@ -24,8 +24,16 @@ function App() {
           })}
         </div>
         <div className="card">
-          <h2>{selectlanguages && selectlanguages.title}</h2>
-          <p>{selectlanguages && selectlanguages.description}</p>
+          <h2>
+            {selectlanguages === null
+              ? "Nessun linguaggio selezionato"
+              : selectlanguages.title}
+          </h2>
+          <p>
+            {selectlanguages === null
+              ? "seleziona un linguaggio"
+              : selectlanguages.description}
+          </p>
         </div>
       </div>
     </>

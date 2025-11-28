@@ -37,3 +37,7 @@ button {
   border: 2px solid gray;
   font-size: 1.5rem;
 }
+
+p {
+  margin-top: 10px;
+}
