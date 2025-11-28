@@ -26,7 +26,7 @@ body {
 button {
   padding: 20px;
   margin-right: 50px;
-  background-color: lightblue;
+
   border: none;
   font-size: 1.5rem;
 }
@@ -40,4 +40,30 @@ button {
 
 p {
   margin-top: 10px;
+}
+.active {
+  background-color: aquamarine;
+}
+
+.red {
+  background-color: red;
+}
+
+.col-1 {
+  background-color: brown;
+}
+.col-2 {
+  background-color: red;
+}
+.col-3 {
+  background-color: yellow;
+}
+.col-4 {
+  background-color: blue;
+}
+.col-5 {
+  background-color: blueviolet;
+}
+.col-6 {
+  background-color: orange;
 }

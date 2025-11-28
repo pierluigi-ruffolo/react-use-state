@@ -12,11 +12,16 @@ function App() {
       </header>
       <div className="container">
         <div className="d-flex">
-          {languages.map((language) => {
+          {languages.map((language, index) => {
             return (
               <button
                 onClick={() => setSelectLanguages(language)}
                 key={language.id}
+                className={
+                  selectlanguages && selectlanguages.id === language.id
+                    ? `col-${language.id}`
+                    : ""
+                }
               >
                 {language.title}
               </button>
