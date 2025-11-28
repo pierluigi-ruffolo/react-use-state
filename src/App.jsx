@@ -24,8 +24,8 @@ function App() {
           })}
         </div>
         <div className="card">
-          <h2>{selectlanguages === null ? "ciao" : selectlanguages.title}</h2>
-          <p></p>
+          <h2>{selectlanguages && selectlanguages.title}</h2>
+          <p>{selectlanguages && selectlanguages.description}</p>
         </div>
       </div>
     </>
