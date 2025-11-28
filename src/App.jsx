@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { languages } from "./dati/languages";
 import "./App.css";
+import Card from "./components/Card";
 
 function App() {
   const [selectlanguages, setSelectLanguages] = useState(null);
@@ -12,7 +13,7 @@ function App() {
       </header>
       <div className="container">
         <div className="d-flex">
-          {languages.map((language, index) => {
+          {languages.map((language) => {
             return (
               <button
                 onClick={() => setSelectLanguages(language)}
@@ -28,18 +29,7 @@ function App() {
             );
           })}
         </div>
-        <div className="card">
-          <h2>
-            {selectlanguages === null
-              ? "Nessun linguaggio selezionato"
-              : selectlanguages.title}
-          </h2>
-          <p>
-            {selectlanguages === null
-              ? "seleziona un linguaggio"
-              : selectlanguages.description}
-          </p>
-        </div>
+        <Card selectlanguages={selectlanguages} />
       </div>
     </>
   );
